@@ -12,8 +12,15 @@
     <script>
         const physical = new Audio();
         physical.src = 'Physical.mp3';
+        function togglePlayOne() {
+            return physical.paused ? physical.play() : physical.pause();
+        };
         const futureN = new Audio();
         futureN.src = 'futuren.mp3';
+        function togglePlayTwo() {
+                return futureN.paused ? futureN.play() : futureN.pause();
+            };
+
     </script>
 </head>
 <body>
@@ -22,8 +29,9 @@
             <div class="logo">POP</div>
             <div class="year">JAN 2020</div>
             <div class="cover">
-                <div id="play">
-                    <a href="#" onmousedown="physical.play();"><i class="fas fa-play"></i></a>
+                <div id="play" class="playpause">
+                        <input type="checkbox" onClick="togglePlayOne()" value="None" id="playpause" name="check" checked>
+                        <label for="playpause" tabindex=1></label>
                 </div>
             </div>
             <div class="data">
@@ -71,8 +79,9 @@
             </div>
             <div class="upper-block"></div>
             <div class="bottom">
-                <div id="next">
-                    <a href="#" onmousedown="futureN.play();"><i class="fas fa-fast-forward"></i></a>
+                <div id="next" class="playpauseTwo">
+                    <input type="checkbox" onClick="togglePlayTwo()" value="None" id="playpauseTwo" name="check" checked>
+                    <label for="playpauseTwo" tabindex=1></label>
                 </div>
                 <div class="data2">
                     <div class="album-name3">

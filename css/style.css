@@ -129,7 +129,7 @@ html, body {
     font-size: 12px;
 }
 
-#play a, #next a {
+#play, #next {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -308,3 +308,47 @@ html, body {
     animation-delay: 3.6s;
 }
 
+/*Play/Pause Buttom for Physical*/
+.playpause label {
+  display: block;
+  box-sizing: border-box;
+  width: 0;
+  height: 34px;
+  border-color: transparent transparent transparent #fff;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: double;
+  border-width: 0px 0 0px 30px;
+}
+.playpause input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+.playpause input[type="checkbox"]:checked + label {
+  border-style: solid;
+  height: 34px;
+  border-width: 17px 0 17px 30px;
+}
+
+/*Play/Pause Buttom for Furute Nostalgia*/
+
+.playpauseTwo label {
+  display: block;
+  box-sizing: border-box;
+  width: 0;
+  height: 34px;
+  border-color: transparent transparent transparent #fff;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: double;
+  border-width: 0px 0 0px 30px;
+}
+.playpauseTwo input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+.playpauseTwo input[type="checkbox"]:checked + label {
+  border-style: solid;
+  height: 34px;
+  border-width: 17px 0 17px 30px;
+}
