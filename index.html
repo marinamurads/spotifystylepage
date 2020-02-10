@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Physical - Dua Lipa New Single</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/8d48949bca.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+        const physical = new Audio();
+        physical.src = 'Physical.mp3';
+        const futureN = new Audio();
+        futureN.src = 'futuren.mp3';
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-col">
+            <div class="logo">POP</div>
+            <div class="year">JAN 2020</div>
+            <div class="cover">
+                <div id="play">
+                    <a href="#" onmousedown="futureN.play();"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+            <div class="data">
+                <div class="album-name">
+                    <p id="name">PHYSICAL</p>
+                </div>
+                <div class="album-artist">
+                    <p id="artist">Dua Lipa</p>
+                </div>
+            </div>
+            <div class="block-cover"></div>
+            <div class="buy">
+                <p id="more">Buy Now</p>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="upper">
+                <div class="about">
+                    <h1>Song Info</h1>
+                    <div class="album-name2">
+                        <p><ion-icon name="radio"></ion-icon>
+                        &nbsp; <span>Physical</span></p>
+                    </div>
+
+                    <div class="album-artist2">
+                        <p><ion-icon name="person"></ion-icon>
+                            &nbsp; <span>Dua Lipa</span></p>
+                    </div>
+
+                    <div class="album-genre2">
+                        <p><ion-icon name="musical-notes"></ion-icon>
+                            &nbsp; <span>Pop Music</span></p>
+                    </div>
+
+                    <div class="media">
+                        <p>Share Now:</p>
+                        <ul>
+                            <li><ion-icon name="logo-facebook"></ion-icon></li>
+                            <li><ion-icon name="logo-instagram"></ion-icon></li>
+                            <li><ion-icon name="logo-twitter"></ion-icon></li>
+                            <li><ion-icon name="logo-whatsapp"></ion-icon></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="upper-block"></div>
+            <div class="bottom">
+                <div id="next">
+                    <a href="#" onmousedown="futureN.play();"><i class="fas fa-fast-forward"></i></a>
+                </div>
+                <div class="data2">
+                    <div class="album-name3">
+                        <p id="name">Future Nostalgia</p>
+                    </div>
+                    <div class="album-artist3">
+                        <p id="artist">Dua Lipa</p>
+                    </div>
+                </div>
+                <div class="more">
+                    <p id="more">More Like This</p>
+                </div>
+            </div>
+            <div class="block-bottom">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts --> 
+    <script type="text/javascript" src="js/app.js"></script>
+    
+</body>
+</html>
